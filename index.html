@@ -1,1184 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Hagi's - Amazing & Delicious Food</title>
-  <meta name="title" content="Hagi's - Amazing & Delicious Food">
-  <meta name="description" content="Best imbiss in the City of Innsbruck">
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/döner.jpg">
-  <link rel="preload" as="image" href="./assets/images/pizza.jpg">
-  <link rel="preload" as="image" href="./assets/images/dürüm.jpg">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hagi's Pizzeria | Innstraße 3, Innsbruck</title>
+    <meta name="description" content="Entdecken Sie Hagi's Pizzeria in der Innstraße 3 in Innsbruck. Holzofenpizza, gemütliches Ambiente, Reservierung und Abholung.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
-
-<body id="top">
-
-  <!-- 
-    - #PRELOADER
-  -->
-
-  <div class="preload" data-preaload>
-    <div class="circle"></div>
-    <p class="text">Hagi's</p>
-  </div>
-
-
-
-
-
-  <!-- 
-    - #TOP BAR
-  -->
-
-  <div class="topbar">
-    <div class="container">
-
-      <address class="topbar-item">
-        <div class="icon">
-          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">
-          Innstraße 3, 6020 Innsbruck, Österreich
-        </span>
-      </address>
-
-      <div class="separator"></div>
-
-      <div class="topbar-item item-2">
-        <div class="icon">
-          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">Daily : 11.00 am to 11.00 pm</span>
-      </div>
-
-      <a href="tel:+11234567890" class="topbar-item link">
-        <div class="icon">
-          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">00436601543435</span>
-      </a>
-
-      <div class="separator"></div>
-<!--
-      <a href="mailto:booking@restaurant.com" class="topbar-item link">
-        <div class="icon">
-          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-        </div>
-
-        <span class="span">booking@restaurant.com</span>
-      </a>
--->
-    </div>
-  </div>
-
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="#" class="logo">
-        <img src="./assets/images/littlelogo.png" width="160" height="50" alt="Grilli - Home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <button class="close-btn" aria-label="close menu" data-nav-toggler>
-          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.png" width="160" height="50" alt="Grilli - Home">
-        </a>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link hover-underline active">
-              <div class="separator"></div>
-
-              <span class="span">Home</span>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="brand" href="#hero">
+                <span class="brand-primary">Hagi's</span>
+                <span class="brand-secondary">Pizzeria</span>
             </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#menu" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
-              <span class="span">Menus</span>
-            </a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
-              <span class="span">About Us</span>
-            </a>
-          </li>
-<!--
-          <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
-              <span class="span">Our Chefs</span>
-            </a>
-          </li>
--->
-          <li class="navbar-item">
-            <a href="#" class="navbar-link hover-underline">
-              <div class="separator"></div>
-
-              <span class="span">Contact</span>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="text-center">
-          <p class="headline-1 navbar-title">Visit Us</p>
-
-          <address class="body-4">
-            Innstraße 3, <br>
-            6020 Innsbruck, Austria
-          </address>
-
-          <p class="body-4 navbar-text">Open: 11.00 am - 11.00 pm</p>
-
-     <!--   <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">booking@grilli.com</a>
-
-          <div class="separator"></div>
-
-          <p class="contact-label">Booking Request</p>
-
-          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
-            +88-123-123456
-          </a>
+            <button class="nav-toggle" aria-label="Navigation umschalten">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" aria-label="Hauptnavigation">
+                <a href="#about">Über uns</a>
+                <a href="#menu">Menü</a>
+                <a href="#gallery">Impressionen</a>
+                <a href="#location">Anfahrt</a>
+                <a href="#contact" class="nav-cta">Kontakt</a>
+            </nav>
         </div>
+    </header>
 
-      </nav>
-
-      <a href="#" class="btn btn-secondary">
-        <span class="text text-1">Find A Table</span>
-
-        <span class="text text-2" aria-hidden="true">Find A Table</span>
-      </a>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
--->  
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero text-center" aria-label="home" id="home">
-
-        <ul class="hero-slider" data-hero-slider>
-
-          <li class="slider-item active" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="./assets/images/döner.jpg" width="1880" height="950" alt="" class="img-cover">
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content" data-reveal>
+                <p class="hero-eyebrow">Innstraße 3 · 6020 Innsbruck</p>
+                <h1>Döner &amp; Holzofenpizza, die Innsbruck liebt.</h1>
+                <p class="hero-subtitle">Seit 1998 servieren wir knusprig gegrillten Döner, handgezogenen Teig aus dem Holzofen, hausgemachte Saucen und ausgewählte italienische Weine – mitten im Herzen von St. Nikolaus.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="tel:+43512567890">Jetzt reservieren</a>
+                    <a class="btn btn-secondary" href="#menu">Menü entdecken</a>
+                </div>
             </div>
+        </section>
 
-            <p class="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              For the love of <br>
-              delicious food
-            </h1>
-
-            <a href="./assets/images/menupdf.pdf" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
-
-          </li>
-
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="./assets/images/pizza.jpg" width="1880" height="950" alt="" class="img-cover">
+        <section id="about" class="section about">
+            <div class="container section-grid" data-reveal>
+                <div class="section-content">
+                    <h2>Über Hagi's</h2>
+                    <p>In unserer offenen Küche duftet es nach frisch gegrilltem Fleisch, hausgemachten Marinaden, Kräutern und knusprigem Teig. Unser Team um Hagi bereitet jeden Döner frisch auf Bestellung zu und holt jede Pizza direkt aus dem Holzofen – mit regionalen Zutaten, die wir täglich erhalten.</p>
+                    <p>Wir glauben, dass gutes Essen verbindet. Deshalb ist unsere Pizzeria &amp; Dönerstube Treffpunkt für Familien, Freunde und alle, die Innsbruck kulinarisch entdecken möchten.</p>
+                    <ul class="highlight-list">
+                        <li>Signature Döner in Steinofen-Fladenbrot</li>
+                        <li>Holzofenpizza &amp; handgemachte Pasta</li>
+                        <li>Vegetarische &amp; vegane Optionen</li>
+                    </ul>
+                </div>
+                <div class="section-media">
+                    <div class="media-card">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=80" alt="Holzofenpizza mit frischem Basilikum">
+                    </div>
+                    <div class="media-card media-card--offset">
+                        <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=900&q=80" alt="Frische Zutaten für Pizza">
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <p class="label-2 section-subtitle slider-reveal">delightful experience</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Flavors Inspired by <br>
-              the Seasons
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
-
-          </li>
-
-          <li class="slider-item" data-hero-slider-item>
-
-            <div class="slider-bg">
-              <img src="./assets/images/dürüm.jpg" width="1880" height="950" alt="" class="img-cover">
+        <section id="menu" class="section menu">
+            <div class="container" data-reveal>
+                <h2>Unsere Favoriten</h2>
+                <p class="section-intro">Döner aus dem Steinofen-Fladen, knusprige Pizza-Klassiker und hausgemachte Gerichte – alle Speisen auch zum Mitnehmen.</p>
+                <div class="card-grid">
+                    <article class="menu-card">
+                        <h3>Hagi's Signature Döner</h3>
+                        <p>Steinofen-Fladenbrot, gegrilltes Kalbfleisch, Tomate, Haus-Salsa, Kräuteryoghurt</p>
+                        <span class="price">€ 8,90</span>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Döner Deluxe</h3>
+                        <p>Kalb oder Huhn, gegrillte Paprika, Feta, Granatapfel, Limetten-Minz-Dressing</p>
+                        <span class="price">€ 9,80</span>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Pizza Innstraße</h3>
+                        <p>Fior di Latte, Südtiroler Speck, rote Zwiebel, Bergkräuter</p>
+                        <span class="price">€ 13,50</span>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Pizza Dolomiti</h3>
+                        <p>Büffelmozzarella, Kirschtomaten, Rucola, Parmigiano Reggiano</p>
+                        <span class="price">€ 12,90</span>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Pizza Vegana Verde</h3>
+                        <p>Cashew-Mozzarella, gegrillte Zucchini, Artischocken, Oliven</p>
+                        <span class="price">€ 12,40</span>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Pasta al Limone</h3>
+                        <p>Tagliatelle, Zitronencreme, Pecorino, geröstete Pinienkerne</p>
+                        <span class="price">€ 11,90</span>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Döner Bowl Orientale</h3>
+                        <p>Quinoa, gegrilltes Gemüse, Hummus, Kräutersalat, Sesam, Wahlweise Kalb/Huhn/Vegan</p>
+                        <span class="price">€ 10,40</span>
+                    </article>
+                    <article class="menu-card">
+                        <h3>Tiramisu della Casa</h3>
+                        <p>Gebeizter Espresso, Mascarpone, dunkle Schokolade</p>
+                        <span class="price">€ 6,50</span>
+                    </article>
+                </div>
+                <div class="menu-footer">
+                    <p>Das komplette Menü finden Sie vor Ort oder auf Anfrage per E-Mail.</p>
+                    <a class="btn btn-outline" href="mailto:hallo@hagis-pizzeria.at">Menü anfragen</a>
+                </div>
             </div>
+        </section>
 
-            <p class="label-2 section-subtitle slider-reveal">amazing & delicious</p>
-
-            <h1 class="display-1 hero-title slider-reveal">
-              Where every flavor <br>
-              tells a story
-            </h1>
-
-            <p class="body-2 hero-text slider-reveal">
-              Come with family & feel the joy of mouthwatering food
-            </p>
-
-            <a href="#" class="btn btn-primary slider-reveal">
-              <span class="text text-1">View Our Menu</span>
-
-              <span class="text text-2" aria-hidden="true">View Our Menu</span>
-            </a>
-
-          </li>
-
-        </ul>
-
-        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
-          <ion-icon name="chevron-back"></ion-icon>
-        </button>
-
-        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
-          <ion-icon name="chevron-forward"></ion-icon>
-        </button>
-
-<!--        <a href="#" class="hero-btn has-after">
-          <img src="./assets/images/pizza.jpg" width="48" height="48" alt="booking icon">
-
-          <span class="label-2 text-center span">Book A Table</span>
-        </a>
--->
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="section service bg-black-10 text-center" aria-label="service">
-        <div class="container">
-
-          <p class="section-subtitle label-2">Flavors For Royalty</p>
-
-          <h2 class="headline-1 section-title">We Offer Top Notch</h2>
-
-          <p class="section-text">
-            Hagi's Pizzera is a small Restaurant in the heart of the city of Innsbruck. Come to our Restaurant to enjoy our döner with selfmade bread and enjoy the best pizza with a stunning view to the Alps
-          </p>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <a href="#" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/view.png" width="285" height="336" loading="lazy" alt="Breakfast"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
-
-
-
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <a href="#" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/imbiss.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-                <div class="card-content">
-
-
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <a href="#" class="has-before hover:shine">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/location.jpeg" width="285" height="336" loading="lazy" alt="Drinks"
-                      class="img-cover">
-                  </figure>
-                </a>
-
-
-              </div>
-            </li>
-
-          </ul>
-
-          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
-            class="shape shape-1 move-anim">
-          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
-            class="shape shape-2 move-anim">
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about text-center" aria-labelledby="about-label" id="about">
-        <div class="container">
-
-          <div class="about-content">
-
-            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
-
-            <h2 class="headline-1 section-title">Every Food vor Tells a Story</h2>
-
-            <p class="section-text">
-              Welcome to Hagi's Pizzeria, conveniently located in the bustling heart of Innsbruck. Treat yourself to our unique falafel served with freshly baked pita,
-              or try our acclaimed pizzas while taking in the spectacular Alpine scenery. Join us at Hagi's Pizzeria for a culinary adventure with a view!
-            </p>
-
-
-            <a href="#" class="btn btn-primary">
-              <span class="text text-1">Read More</span>
-
-              <span class="text text-2" aria-hidden="true">Read More</span>
-            </a>
-
-          </div>
-
-          <figure class="about-banner">
-
-            <img src="./assets/images/view.png" width="570" height="570" loading="lazy" alt="about banner"
-              class="w-100" data-parallax-item data-parallax-speed="1">
-
-            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
-              <img src="./assets/images/location.jpeg" width="285" height="285" loading="lazy" alt=""
-                class="w-100">
+        <section id="gallery" class="section gallery">
+            <div class="container" data-reveal>
+                <h2>Impressionen</h2>
+                <p class="section-intro">Folgen Sie uns auf Social Media, um die neuesten Kreationen aus Dönergrill und Holzofen live zu erleben.</p>
+                <!-- Place <div> tag where you want the feed to appear -->
+                <div id="curator-feed-default-feed-layout">
+                    <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+                </div>
             </div>
+        </section>
 
-            <div class="abs-img abs-img-2 has-before">
-              <img src="./assets/images/littlelogo.png" width="133" height="134" loading="lazy" alt="">
+        <section id="location" class="section location">
+            <div class="container section-grid" data-reveal>
+                <div class="section-content">
+                    <h2>So finden Sie uns</h2>
+                    <div class="info-block">
+                        <h3>Adresse</h3>
+                        <p>Hagi's Pizzeria<br>Innstraße 3<br>6020 Innsbruck</p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Öffnungszeiten</h3>
+                        <ul>
+                            <li>Montag – Donnerstag: 11:30 – 23:00 Uhr</li>
+                            <li>Freitag &amp; Samstag: 11:30 – 00:00 Uhr</li>
+                            <li>Sonntag: 11:30 – 23:00 Uhr</li>
+                        </ul>
+                    </div>
+                    <div class="info-block">
+                        <h3>Kontakt</h3>
+                        <p>Telefon: <a href="tel:+43512567890">+43 512 567 890</a><br>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <iframe title="Karte zur Hagi's Pizzeria Innsbruck" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.7019692059797!2d11.393044877205017!3d47.27112376562247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774e27f8e943bb9%3A0x9cf20c8caa4b7d20!2sInnstra%C3%9Fe%203%2C%206020%20Innsbruck!5e0!3m2!1sde!2sat!4v1700000000000!5m2!1sde!2sat" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
+        </section>
 
-          </figure>
+        <section id="contact" class="section contact">
+            <div class="container contact-grid" data-reveal>
+                <div class="section-content">
+                    <h2>Kontakt aufnehmen</h2>
+                    <p>Sie möchten reservieren, ein Event planen oder bestellen? Senden Sie uns eine Nachricht – wir melden uns so schnell wie möglich.</p>
+                    <div class="contact-details">
+                        <a href="tel:+43512567890" class="contact-tile">
+                            <span class="contact-icon">📞</span>
+                            <span>
+                                <strong>Telefon</strong>
+                                <small>+43 512 567 890</small>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formsubmit.co/secondacc010100@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Neue Anfrage über Hagi's Website">
+                    <input type="hidden" name="_captcha" value="false">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Ihr Name" required>
 
-          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+                    <label for="email">E-Mail</label>
+                    <input id="email" name="_replyto" type="email" placeholder="Ihre E-Mail-Adresse" required>
 
-        </div>
-      </section>
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Wie können wir helfen?" required></textarea>
 
-
-
-
-
-      <!-- 
-        - #SPECIAL DISH
-      
-
-      <section class="special-dish text-center" aria-labelledby="dish-label">
-
-        <div class="special-dish-banner">
-          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
-            class="img-cover">
-        </div>
-
-        <div class="special-dish-content bg-black-10">
-          <div class="container">
-
-            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
-
-            <p class="section-subtitle label-2">Special Dish</p>
-
-            <h2 class="headline-1 section-title">Lobster Tortellini</h2>
-
-            <p class="section-text">
-              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-              industrys standard dummy text ever since the when an unknown printer took a galley of type.
-            </p>
-
-            <div class="wrapper">
-              <del class="del body-3">$40.00</del>
-
-              <span class="span body-1">$20.00</span>
+                    <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                    <p class="form-meta">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten entsprechend unserer Datenschutzerklärung zu.</p>
+                </form>
             </div>
-
-            <a href="#" class="btn btn-primary">
-              <span class="text text-1">View All Menu</span>
-
-              <span class="text text-2" aria-hidden="true">View All Menu</span>
-            </a>
-
-          </div>
-        </div>
-
-        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
-
-        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
-
-      </section>
-
-
-
--->
-
-      <!-- 
-        - #MENU
-    
-
-      <section class="section menu" aria-label="menu-label" id="menu">
-        <div class="container">
-
-          <p class="section-subtitle text-center label-2">Special Selection</p>
-
-          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="menu-card hover:card">
-
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
-                    class="img-cover">
-                </figure>
-
-                <div>
-
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Greek Salad</a>
-                    </h3>
-
-                    <span class="badge label-1">Seasonal</span>
-
-                    <span class="span title-2">$25.50</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne"
-                    class="img-cover">
-                </figure>
-
-                <div>
-
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Lasagne</a>
-                    </h3>
-
-                    <span class="span title-2">$40.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
-                    class="img-cover">
-                </figure>
-
-                <div>
-
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Butternut Pumpkin</a>
-                    </h3>
-
-                    <span class="span title-2">$10.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
-                    class="img-cover">
-                </figure>
-
-                <div>
-
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Tokusen Wagyu</a>
-                    </h3>
-
-                    <span class="badge label-1">New</span>
-
-                    <span class="span title-2">$39.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
-                    class="img-cover">
-                </figure>
-
-                <div>
-
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Olivas Rellenas</a>
-                    </h3>
-
-                    <span class="span title-2">$25.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="menu-card hover:card">
-
-                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
-                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
-                    class="img-cover">
-                </figure>
-
-                <div>
-
-                  <div class="title-wrapper">
-                    <h3 class="title-3">
-                      <a href="#" class="card-title">Opu Fish</a>
-                    </h3>
-
-                    <span class="span title-2">$49.00</span>
-                  </div>
-
-                  <p class="card-text label-1">
-                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <p class="menu-text text-center">
-            During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
-          </p>
-
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View All Menu</span>
-
-            <span class="text text-2" aria-hidden="true">View All Menu</span>
-          </a>
-
-          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
-            class="shape shape-2 move-anim">
-          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
-            class="shape shape-3 move-anim">
-
-        </div>
-      </section>
-
-  -->
-  <section class="section menu" aria-label="menu-label" id="menu">
-    <div class="container">
-      <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
-      <p class="menu-description text-center">
-        All our dishes are made with the freshest ingredients to ensure the highest quality and taste.
-      </p>
-  
-      <div class="menu-gallery">
-        <figure>
-          <img src="./assets/images/menu1.jpeg" alt="Fresh Greek Salad" class="menu-image">
-        </figure>
-        <figure>
-          <img src="./assets/images/menu2.jpeg" alt="Homemade Lasagne" class="menu-image">
-
-        </figure>
-      </div>
-  
-      <a href="./assets/images/menupdf.pdf" class="btn btn-primary"download="Our_Menu.pdf">Download Menu (PDF)</a>
-    </div>
-  </section>
-  
-
-      <!-- 
-        - #TESTIMONIALS
-
-
-      <section class="section testi text-center has-bg-image"
-        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
-        <div class="container">
-
-          <div class="quote">”</div>
-
-          <p class="headline-2 testi-text">
-            I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
-            extraordinary.
-          </p>
-
-          <div class="wrapper">
-            <div class="separator"></div>
-            <div class="separator"></div>
-            <div class="separator"></div>
-          </div>
-
-          <div class="profile">
-            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
-              class="img">
-
-            <p class="label-2 profile-name">Sam Jhonson</p>
-          </div>
-
-        </div>
-      </section>
-
-
-      -->
-
-
-      <!-- 
-        - #RESERVATION
-
-
-      <section class="reservation">
-        <div class="container">
-
-          <div class="form reservation-form bg-black-10">
-
-            <form action="" class="form-left">
-
-              <h2 class="headline-1 text-center">Online Reservation</h2>
-
-              <p class="form-text text-center">
-                Booking request <a href="tel:+88123123456" class="link">+88-123-123456</a>
-                or fill out the order form
-              </p>
-
-              <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
-
-                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
-              </div>
-
-              <div class="input-wrapper">
-
-                <div class="icon-wrapper">
-                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                  <select name="person" class="input-field">
-                    <option value="1-person">1 Person</option>
-                    <option value="2-person">2 Person</option>
-                    <option value="3-person">3 Person</option>
-                    <option value="4-person">4 Person</option>
-                    <option value="5-person">5 Person</option>
-                    <option value="6-person">6 Person</option>
-                    <option value="7-person">7 Person</option>
-                  </select>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div class="icon-wrapper">
-                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                  <input type="date" name="reservation-date" class="input-field">
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </div>
-
-                <div class="icon-wrapper">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <select name="person" class="input-field">
-                    <option value="08:00am">08 : 00 am</option>
-                    <option value="09:00am">09 : 00 am</option>
-                    <option value="010:00am">10 : 00 am</option>
-                    <option value="011:00am">11 : 00 am</option>
-                    <option value="012:00am">12 : 00 am</option>
-                    <option value="01:00pm">01 : 00 pm</option>
-                    <option value="02:00pm">02 : 00 pm</option>
-                    <option value="03:00pm">03 : 00 pm</option>
-                    <option value="04:00pm">04 : 00 pm</option>
-                    <option value="05:00pm">05 : 00 pm</option>
-                    <option value="06:00pm">06 : 00 pm</option>
-                    <option value="07:00pm">07 : 00 pm</option>
-                    <option value="08:00pm">08 : 00 pm</option>
-                    <option value="09:00pm">09 : 00 pm</option>
-                    <option value="10:00pm">10 : 00 pm</option>
-                  </select>
-
-                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                </div>
-
-              </div>
-
-              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
-
-              <button type="submit" class="btn btn-secondary">
-                <span class="text text-1">Book A Table</span>
-
-                <span class="text text-2" aria-hidden="true">Book A Table</span>
-              </button>
-
-            </form>
-
-            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
-
-              <h2 class="headline-1 text-center">Contact Us</h2>
-
-              <p class="contact-label">Booking Request</p>
-
-              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+88-123-123456</a>
-
-              <div class="separator"></div>
-
-              <p class="contact-label">Location</p>
-
-              <address class="body-4">
-                Restaurant St, Delicious City, <br>
-                London 9578, UK
-              </address>
-
-              <p class="contact-label">Lunch Time</p>
-
-              <p class="body-4">
-                Monday to Sunday <br>
-                11.00 am - 2.30pm
-              </p>
-
-              <p class="contact-label">Dinner Time</p>
-
-              <p class="body-4">
-                Monday to Sunday <br>
-                05.00 pm - 10.00pm
-              </p>
-
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="brand-footer">Hagi's Pizzeria</p>
+                <p>Innstraße 3, 6020 Innsbruck · <a href="tel:+43512567890">+43 512 567 890</a></p>
             </div>
-
-          </div>
-
+            <div class="footer-links">
+                <a href="#hero">Start</a>
+                <a href="#about">Über uns</a>
+                <a href="#menu">Menü</a>
+                <a href="#gallery">Impressionen</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+            <div class="footer-meta">
+                <p>© <span id="current-year"></span> Hagi's Pizzeria. Alle Rechte vorbehalten.</p>
+            </div>
         </div>
-      </section>
-
-
-      -->
-
-
-      <!-- 
-        - #FEATURES
-      -->
-
-      <section class="section features text-center" aria-label="features">
-        <div class="container">
-
-          <p class="section-subtitle label-2">Why Choose Us</p>
-
-          <h2 class="headline-1 section-title">Our Strength</h2>
-
-          <ul class="grid-list">
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Hygienic Food</h3>
-
-                <p class="label-1 card-text"> Our commitment to hygiene and freshness is unparalleled. We source the finest ingredients that are handled and prepared according to strict sanitary standards, ensuring a safe and delightful dining experience with every dish.
-                </p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Fresh Environment</h3>
-
-                <p class="label-1 card-text"> Step into a space where the ambiance is as fresh as our ingredients. Our dining environment is designed to complement the quality of our dishes, providing a clean, serene setting that enhances your meal from the first bite to the last.
-                </p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Skilled Chefs</h3>
-
-                <p class="label-1 card-text">Our kitchen is the heart of our restaurant, pulsing with the passion and skill of our chefs. With years of culinary experience and a flair for innovative recipes, they craft dishes that not only taste exquisite but also tell a story of tradition and creativity.
-                </p>
-
-              </div>
-            </li>
-
-            <li class="feature-item">
-              <div class="feature-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
-                </div>
-
-                <h3 class="title-2 card-title">Best food</h3>
-
-                <p class="label-1 card-text">Our menu is a celebration of flavors brought to life with the freshest local produce and the finest seasonal ingredients. Every dish is a masterpiece, curated with care and crafted to perfection, ensuring that each meal is an unforgettable culinary adventure.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
-            class="shape shape-1">
-
-          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
-            class="shape shape-2">
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #EVENT
-
-
-      <section class="section event bg-black-10" aria-label="event">
-        <div class="container">
-
-          <p class="section-subtitle label-2 text-center">Recent Updates</p>
-
-          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="event-card has-before hover:shine">
-
-                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
-                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
-
-                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
-                </div>
-
-                <div class="card-content">
-                  <p class="card-subtitle label-2 text-center">Recipie</p>
-
-                  <h3 class="card-title title-2 text-center">
-                    Flavour so good you’ll try to eat with your eyes.
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn btn-primary">
-            <span class="text text-1">View Our Blog</span>
-
-            <span class="text text-2" aria-hidden="true">View Our Blog</span>
-          </a>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-      -->
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer section has-bg-image text-center"
-    style="background-image: url('./assets/images/footer-bg.jpg')">
-    <div class="container">
-
-      <div class="footer-top grid-list">
-
-        <div class="footer-brand has-before has-after">
-
-          <a href="#" class="logo">
-            <img src="./assets/images/littlelogo.png" width="160" height="50" loading="lazy" alt="grilli home">
-          </a>
-
-          <address class="body-4">
-            Innstraße 3, 6020 Innsbruck, Austria
-          </address>
-
-
-
-          <a href="tel:+88123123456" class="body-4 contact-link">Call us: +436601543435</a>
-
-          <p class="body-4">
-            Open : 11:00 am - 11:00 pm
-          </p>
-
-          <div class="wrapper">
-            <div class="separator"></div>
-            <div class="separator"></div>
-            <div class="separator"></div>
-          </div>
-
-
-
-
-
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Home</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
-          </li>
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">About Us</a>
-          </li>
-
-
-          <li>
-            <a href="#" class="label-2 footer-link hover-underline">Contact</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <a href="https://www.facebook.com/p/Restaurant-Hagis-100063522846614/" class="label-2 footer-link hover-underline">Facebook</a>
-          </li>
-
-          <li>
-            <a href="https://www.instagram.com/hagisimbiss/" class="label-2 footer-link hover-underline">Instagram</a>
-          </li>
-
-          <li>
-            <a href="https://maps.app.goo.gl/4PD98UY3pKkrjskAA" class="label-2 footer-link hover-underline">Google Maps</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="footer-bottom">
-
-
-
-      </div>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    </footer>
+    <script type="text/javascript">
+    /* curator-feed-default-feed-layout */
+    (function(){
+    var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+    i.src="https://cdn.curator.io/published/296a8c59-51cf-45e0-9f65-c29cb2ef8a4d.js";
+    e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+    })();
+    </script>
 </body>
-
 </html>

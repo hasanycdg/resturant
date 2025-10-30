@@ -1,0 +1,628 @@
+﻿
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hagi''s Pizzeria | Speisekarte</title>
+    <meta name="description" content="Speisekarte von Hagi''s Pizzeria in Innsbruck: Döner, Pizza, Kebap, Burger, Menüs, Salate, Pide und Getränke.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="menu-page">
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="brand" href="index.html#hero">
+                <span class="brand-primary">Hagi''s</span>
+                <span class="brand-secondary">Pizzeria</span>
+            </a>
+            <button class="nav-toggle" aria-label="Navigation umschalten">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" aria-label="Hauptnavigation">
+                <a href="index.html#about">Über uns</a>
+                <a href="menu.html" data-page="menu">Menü</a>
+                <a href="index.html#gallery">Impressionen</a>
+                <a href="index.html#location">Anfahrt</a>
+                <a href="index.html#contact" class="nav-cta">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero hero--menu">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content" data-reveal>
+                <p class="hero-eyebrow">Frisch. Herzhaft. Hagi''s Qualität.</p>
+                <h1>Unsere Speisekarte auf einen Blick.</h1>
+                <p class="hero-subtitle">Original Döner im Sesam-Fladen, hausgemachte Pizza aus dem Ofen, würzige Burger, Menüs, Salate und vieles mehr – wählen Sie Ihren Favoriten.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="tel:+436601543435">Jetzt anrufen</a>
+                    <a class="btn btn-secondary" href="index.html#contact">Fragen zum Menü?</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu-intro" data-reveal>
+            <div class="container narrow">
+                <h2>Alles, was schmeckt – kompakt sortiert.</h2>
+                <p>Hier finden Sie unser vollständiges Angebot genau so, wie Sie es vor Ort auf unserer Speisekarte sehen. Preise verstehen sich in Euro und inkl. der Standard-Beilagen laut Beschreibung. Für Allergene gelten die Aushänge im Lokal.</p>
+            </div>
+        </section>
+
+        <section class="menu-controls" data-reveal>
+            <div class="container">
+                <div class="menu-search">
+                    <span aria-hidden="true" class="menu-search-icon">🔍</span>
+                    <input id="menu-search" type="search" placeholder="Suche nach Gerichten..." aria-label="Suche nach Gerichten">
+                </div>
+                <div class="menu-chips" role="tablist" aria-label="Speisekategorien">
+                    <button class="menu-chip is-active" data-filter="all" type="button">🍽️ Alle</button>
+                    <button class="menu-chip" data-filter="pizza" type="button">🍕 Pizza</button>
+                    <button class="menu-chip" data-filter="doener" type="button">🥙 Döner</button>
+                    <button class="menu-chip" data-filter="burger" type="button">🍔 Burger</button>
+                    <button class="menu-chip" data-filter="sides" type="button">🍟 Pommes &amp; Currywurst</button>
+                    <button class="menu-chip" data-filter="menus" type="button">🥤 Menüs</button>
+                    <button class="menu-chip" data-filter="salad" type="button">🥗 Salate</button>
+                    <button class="menu-chip" data-filter="pide" type="button">🫓 Pide</button>
+                    <button class="menu-chip" data-filter="drinks" type="button">🥤 Getränke</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu-section" data-reveal>
+            <div class="container">
+                <div class="menu-grid">
+                    <article class="menu-category" data-category="pizza">
+                        <h2>Pizza</h2>
+                        <p class="menu-category-note">Alle Pizzen werden mit Tomatensauce, Käse und Oregano zubereitet.</p>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Margherita</span>
+                                    <p class="menu-item-desc">Tomatensauce, Käse, Oregano</p>
+                                </div>
+                                <span class="menu-item-price">€ 8,60</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Funghi</span>
+                                    <p class="menu-item-desc">Champignons</p>
+                                </div>
+                                <span class="menu-item-price">€ 9,20</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Prosciuto</span>
+                                    <p class="menu-item-desc">Schinken</p>
+                                </div>
+                                <span class="menu-item-price">€ 9,80</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Prosciutto Funghi</span>
+                                    <p class="menu-item-desc">Champignons, Schinken</p>
+                                </div>
+                                <span class="menu-item-price">€ 10,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Salami</span>
+                                </div>
+                                <span class="menu-item-price">€ 10,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Tonno</span>
+                                    <p class="menu-item-desc">Thunfisch, Oliven</p>
+                                </div>
+                                <span class="menu-item-price">€ 10,80</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Salerno</span>
+                                    <p class="menu-item-desc">Schinken, Salami</p>
+                                </div>
+                                <span class="menu-item-price">€ 10,60</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Calzone</span>
+                                    <p class="menu-item-desc">Salami, Schinken, Champignons</p>
+                                </div>
+                                <span class="menu-item-price">€ 10,80</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Diavolo</span>
+                                    <p class="menu-item-desc">Scharfe Salami, Pfefferoni</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Capricciosa</span>
+                                    <p class="menu-item-desc">Schinken, Champignons, Oliven, Artischocken</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,00</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Vegetarisch</span>
+                                    <p class="menu-item-desc">Gemüseauswahl, Käse</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,00</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Spinat Artischocke</span>
+                                    <p class="menu-item-desc">Spinat, Artischocken, Paprika, Spargel</p>
+                                </div>
+                                <span class="menu-item-price">€ 10,70</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Siciliana</span>
+                                    <p class="menu-item-desc">Schinken, Thunfisch, Zwiebel</p>
+                                </div>
+                                <span class="menu-item-price">€ 10,60</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Quattro Formaggi</span>
+                                    <p class="menu-item-desc">Vier Sorten Käse</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,30</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Gigante</span>
+                                    <p class="menu-item-desc">Schinken, Champignons, Salami, Thunfisch, Zwiebel</p>
+                                </div>
+                                <span class="menu-item-price">€ 12,00</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Tirolese</span>
+                                    <p class="menu-item-desc">Speck, Zwiebel, Ei, Knoblauch</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,30</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Kebappizza</span>
+                                    <p class="menu-item-desc">Kebapfleisch, Joghurtsauce</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Hagi''s Zwiebel</span>
+                                    <p class="menu-item-desc">Zwiebel, Salami, Gorgonzola</p>
+                                </div>
+                                <span class="menu-item-price">€ 12,00</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Hagi''s Kebap Pizza</span>
+                                    <p class="menu-item-desc">Schafkäse, Kebapfleisch, Eisalat, Knoblauch</p>
+                                </div>
+                                <span class="menu-item-price">€ 12,00</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Spinat &amp; Schafkäse</span>
+                                    <p class="menu-item-desc">Spinat, Schafkäse, Knoblauch</p>
+                                </div>
+                                <span class="menu-item-price">€ 10,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Hawaii</span>
+                                    <p class="menu-item-desc">Schinken, Ananas</p>
+                                </div>
+                                <span class="menu-item-price">€ 10,40</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Mexicano</span>
+                                    <p class="menu-item-desc">Schinken, Paprika, Zwiebel, Mais, Knoblauch</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,80</span>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-category" data-category="doener">
+                        <h2>Kebap &amp; Falafel</h2>
+                        <p class="menu-category-note">Mit hausgemachtem Brot und frisch geschnittenem Salat.</p>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Kebabbox</span>
+                                    <p class="menu-item-desc">Pommes, Salat, Fleisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 6,30</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Sandwich</span>
+                                    <p class="menu-item-desc">Salat, Sauce, Fleisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 5,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Sandwich Schafkäse</span>
+                                    <p class="menu-item-desc">Salat, Sauce, Fleisch, Schafkäse</p>
+                                </div>
+                                <span class="menu-item-price">€ 6,40</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Sandwich Vegetarisch</span>
+                                    <p class="menu-item-desc">Salat, Sauce, ohne Fleisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 5,30</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Dürüm</span>
+                                    <p class="menu-item-desc">Salat, Sauce, Fleisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 6,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Dürüm Schafkäse</span>
+                                    <p class="menu-item-desc">Salat, Sauce, mit Schafkäse</p>
+                                </div>
+                                <span class="menu-item-price">€ 7,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Dürüm Vegetarisch</span>
+                                    <p class="menu-item-desc">Salat, Sauce, ohne Fleisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 6,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Spezial Dürüm</span>
+                                    <p class="menu-item-desc">Mit Pommes, Mozzarella, Fleisch, Salat, Sauce</p>
+                                </div>
+                                <span class="menu-item-price">€ 8,30</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Dürüm mit Tonno</span>
+                                    <p class="menu-item-desc">Mit Thunfisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 7,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Kebap im Bosna Brot</span>
+                                    <p class="menu-item-desc">Mit Bosna Brot</p>
+                                </div>
+                                <span class="menu-item-price">€ 7,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Kebapteller</span>
+                                    <p class="menu-item-desc">Brot, Fleisch, Pommes, Salat, Sauce</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Falafel Sandwich</span>
+                                    <p class="menu-item-desc">Salat, Sauce</p>
+                                </div>
+                                <span class="menu-item-price">€ 6,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Falafel Dürüm</span>
+                                    <p class="menu-item-desc">Salat, Sauce</p>
+                                </div>
+                                <span class="menu-item-price">€ 7,50</span>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-category" data-category="burger">
+                        <h2>Burger &amp; Co.</h2>
+                        <p class="menu-category-note">Mit hausgemachtem Brot und knusprigen Pommes.</p>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Hamburger</span>
+                                    <p class="menu-item-desc">Rindfleisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 5,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Cheeseburger</span>
+                                    <p class="menu-item-desc">Rindfleisch, Käse</p>
+                                </div>
+                                <span class="menu-item-price">€ 6,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Schnitzelburger</span>
+                                    <p class="menu-item-desc">Mit Putenfleisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 7,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Schnitzelburger im Bosna Brot</span>
+                                    <p class="menu-item-desc">Mit Putenfleisch</p>
+                                </div>
+                                <span class="menu-item-price">€ 7,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Schnitzel mit Pommes</span>
+                                </div>
+                                <span class="menu-item-price">€ 10,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Pommes</span>
+                                    <p class="menu-item-desc">Mit Ketchup und Mayo</p>
+                                </div>
+                                <span class="menu-item-price">€ 4,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Spezial Pommes</span>
+                                    <p class="menu-item-desc">Curry, geröstete Zwiebel, Knoblauch, Ketchup</p>
+                                </div>
+                                <span class="menu-item-price">€ 6,40</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Nuggets Teller</span>
+                                    <p class="menu-item-desc">10 Nuggets, Pommes, Ketchup, Mayonnaise</p>
+                                </div>
+                                <span class="menu-item-price">€ 9,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Chicken Wings</span>
+                                    <p class="menu-item-desc">8 Wings, Pommes, Ketchup, Mayonnaise</p>
+                                </div>
+                                <span class="menu-item-price">€ 9,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Nuggets Box</span>
+                                    <p class="menu-item-desc">10 Nuggets, 5 Wings, Pommes, Ketchup, Mayonnaise</p>
+                                </div>
+                                <span class="menu-item-price">€ 15,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Extra Pommes / Mayo</span>
+                                </div>
+                                <span class="menu-item-price">€ 0,30</span>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-category" data-category="sides">
+                        <h2>Pommes &amp; Currywurst</h2>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Currywurst mit Pommes</span>
+                                </div>
+                                <span class="menu-item-price">€ 7,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Currywurst mit Brot</span>
+                                </div>
+                                <span class="menu-item-price">€ 7,50</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="menu-category" data-category="menus">
+                        <h2>Menüs</h2>
+                        <p class="menu-category-note">Alle Menüs inkl. Pommes &amp; 0,33 l Limonade.</p>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Menü 1 · Schnitzelburger</span>
+                                </div>
+                                <span class="menu-item-price">€ 10,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Menü 2 · Bosna</span>
+                                </div>
+                                <span class="menu-item-price">€ 11,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Menü 3 · Hamburger</span>
+                                </div>
+                                <span class="menu-item-price">€ 9,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Menü 4 · Cheeseburger</span>
+                                </div>
+                                <span class="menu-item-price">€ 10,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Menü 5 · Kebap Sandwich</span>
+                                </div>
+                                <span class="menu-item-price">€ 10,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Menü 6 · Dürüm</span>
+                                </div>
+                                <span class="menu-item-price">€ 11,90</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="menu-category" data-category="salad">
+                        <h2>Salate</h2>
+                        <p class="menu-category-note">Alle Salate mit Joghurtsauce und hausgemachtem Brot.</p>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Gemischter Salat (klein)</span>
+                                </div>
+                                <span class="menu-item-price">€ 5,90</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Thunfisch Salat (groß)</span>
+                                    <p class="menu-item-desc">Extra Oliven, Thunfisch, Zwiebel</p>
+                                </div>
+                                <span class="menu-item-price">€ 12,00</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Griechischer Salat (groß)</span>
+                                    <p class="menu-item-desc">Extra Schafkäse, Oliven, Zwiebel</p>
+                                </div>
+                                <span class="menu-item-price">€ 11,50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Kebap Salat (groß)</span>
+                                    <p class="menu-item-desc">Mit Kebapfleisch, Oliven</p>
+                                </div>
+                                <span class="menu-item-price">€ 14,00</span>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="menu-category" data-category="pide">
+                        <h2>Pide</h2>
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Pide mit Käse &amp; Ei</span>
+                                </div>
+                                <span class="menu-item-price">€ 9,60</span>
+                            </li>
+                            <li class="menu-item">
+                                <div>
+                                    <span class="menu-item-name">Pide Spinaci &amp; Ei</span>
+                                    <p class="menu-item-desc">Mit Spinat</p>
+                                </div>
+                                <span class="menu-item-price">€ 9,80</span>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="menu-category" data-category="drinks">
+                        <h2>Getränke</h2>
+                        <p class="menu-category-note">Kaltgetränke in 0,33 l und 0,5 l Flaschen.</p>
+                        <div class="menu-subcategory">
+                            <h3>0,33 l</h3>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Cola / Cola Zero / Fanta</span>
+                                    <span class="menu-item-price">€ 2,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Eistee Pfirsich oder Zitrone</span>
+                                    <span class="menu-item-price">€ 2,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Mezzo Mix</span>
+                                    <span class="menu-item-price">€ 2,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Ayran</span>
+                                    <span class="menu-item-price">€ 2,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Red Bull</span>
+                                    <span class="menu-item-price">€ 3,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Bier</span>
+                                    <span class="menu-item-price">€ 3,30</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-subcategory">
+                            <h3>0,5 l</h3>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Cola / Cola Zero / Fanta</span>
+                                    <span class="menu-item-price">€ 3,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Eistee Pfirsich oder Zitrone</span>
+                                    <span class="menu-item-price">€ 3,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Mezzo Mix</span>
+                                    <span class="menu-item-price">€ 3,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Apfelsaft gespritzt</span>
+                                    <span class="menu-item-price">€ 3,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Mineralwasser</span>
+                                    <span class="menu-item-price">€ 3,30</span>
+                                </li>
+                                <li class="menu-item">
+                                    <span class="menu-item-name">Bier</span>
+                                    <span class="menu-item-price">€ 3,80</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+                <p class="menu-empty" role="status" aria-live="polite">Keine Gerichte gefunden. Bitte Suche oder Filter anpassen.</p>
+            </div>
+        </section>
+
+        <section class="section menu-cta" data-reveal>
+            <div class="container">
+                <div class="menu-cta-inner">
+                    <h2>Noch Fragen zur Speisekarte?</h2>
+                    <p>Rufen Sie uns unter <a href="tel:+436601543435">0660 1543435</a> an oder nutzen Sie das Kontaktformular – wir beraten Sie gerne zu Allergenen, Zusatzstoffen oder Gruppenbestellungen.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="tel:+436601543435">Telefonkontakt</a>
+                        <a class="btn btn-secondary" href="index.html#contact">Kontaktformular</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <p class="brand-footer">Hagi''s Pizzeria</p>
+                <p>Innstraße 3, 6020 Innsbruck · <a href="tel:+436601543435">0660 1543435</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html#hero">Start</a>
+                <a href="index.html#about">Über uns</a>
+                <a href="menu.html">Menü</a>
+                <a href="index.html#gallery">Impressionen</a>
+                <a href="index.html#contact">Kontakt</a>
+            </div>
+            <div class="footer-meta">
+                <p>© <span id="current-year"></span> Hagi''s Pizzeria. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

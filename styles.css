@@ -601,7 +601,7 @@ a {
 }
 
 .map-wrapper {
-    min-height: 340px;
+    min-height: 420px;
     border-radius: 22px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);

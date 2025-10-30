@@ -1,0 +1,78 @@
+{
+  "name": "Hagi's Pizzeria",
+  "tagline": "Döner, Pizza und hausgemachte Klassiker in Innsbruck",
+  "description": "Hagi's Pizzeria in der Innstraße 3 bietet frisch gegrillten Döner im Sesam-Fladen, knusprige Pizza aus dem Ofen, Burger, Pommes, Currywurst, Salate, Pide und Menü-Kombinationen. Seit 1998 steht Hagi mit seinem Team für herzliche Gastfreundschaft und handgemachte Speisen, die Innsbruck liebt.",
+  "address": {
+    "street": "Innstraße 3",
+    "postalCode": "6020",
+    "city": "Innsbruck",
+    "country": "AT",
+    "neighbourhood": "St. Nikolaus"
+  },
+  "contact": {
+    "phone": "+43 660 1543435",
+    "email": "secondacc010100@gmail.com",
+    "website": "https://example.com",
+    "orderOptions": [
+      "Telefonische Bestellung",
+      "Abholung vor Ort",
+      "Gruppen- und Eventanfragen auf Anfrage"
+    ]
+  },
+  "hours": {
+    "monday": "11:30-23:00",
+    "tuesday": "11:30-23:00",
+    "wednesday": "11:30-23:00",
+    "thursday": "11:30-23:00",
+    "friday": "11:30-00:00",
+    "saturday": "11:30-00:00",
+    "sunday": "11:30-23:00"
+  },
+  "highlights": [
+    "Signature Döner im Sesam-Fladenbrot mit hausgemachten Saucen",
+    "Holzofen-inspirierte Pizza mit regionalen Zutaten",
+    "Menüs mit Pommes und 0,33 l Getränk",
+    "Vegetarische und vegane Optionen",
+    "Hausgemachte Desserts wie Tiramisu"
+  ],
+  "menuCategories": [
+    "Pizza",
+    "Döner & Kebap",
+    "Burger",
+    "Pommes & Currywurst",
+    "Menü-Kombinationen",
+    "Salate",
+    "Pide",
+    "Getränke"
+  ],
+  "signatureDishes": [
+    {
+      "name": "Döner Dürüm",
+      "description": "Frisch gerollter Döner mit hausgemachten Saucen und Salat im Sesam-Fladen."
+    },
+    {
+      "name": "Hagi's Kebap Pizza",
+      "description": "Knuspriger Teig mit Schafkäse, Kebapfleisch, Eisalat und Knoblauch."
+    },
+    {
+      "name": "Menü 1 · Schnitzelburger",
+      "description": "Schnitzelburger mit Pommes und 0,33 l Limonade."
+    }
+  ],
+  "delivery": {
+    "inHouse": false,
+    "thirdPartyServices": [],
+    "notes": "Bestellungen aktuell telefonisch oder vor Ort."
+  },
+  "social": {
+    "instagram": null,
+    "facebook": null,
+    "tiktok": null
+  },
+  "website-entwickler": {
+    "name": "Hasan Yücedag",
+    "role": "Inhaber",
+    "portfolio": "https://hasanyucedagportfolio.vercel.app/"
+  },
+  "aiUse": "Diese JSON-Datei fasst die wichtigsten Informationen zu Hagi's Pizzeria zusammen, damit KI-Systeme schnell verstehen, wer wir sind, was wir anbieten und wie man uns kontaktiert."
+}

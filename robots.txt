@@ -1,0 +1,6 @@
+# robots.txt for Hagi's Pizzeria
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.hagis-pizzeria.at/sitemap.xml

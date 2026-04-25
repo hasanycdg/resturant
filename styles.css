@@ -455,6 +455,58 @@ a:focus-visible {
     margin: 0;
 }
 
+.blog-faq-section {
+    background: linear-gradient(135deg, rgba(242, 182, 50, 0.12), rgba(221, 57, 52, 0.08));
+}
+
+.blog-faq-grid {
+    display: grid;
+    gap: 0.9rem;
+    max-width: 920px;
+}
+
+.blog-faq-item {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    background: var(--color-light);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.blog-faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 1rem 1.2rem;
+    color: var(--color-dark);
+}
+
+.blog-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.blog-faq-item summary::after {
+    content: "+";
+    float: right;
+    font-size: 1.1rem;
+    line-height: 1;
+    color: var(--color-primary);
+}
+
+.blog-faq-item[open] summary::after {
+    content: "−";
+}
+
+.blog-faq-item p {
+    margin: 0;
+    padding: 0 1.2rem 1rem;
+    color: var(--color-muted);
+}
+
+.blog-faq-item a {
+    font-weight: 600;
+}
+
 .menu-controls {
     background: var(--color-light);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);

@@ -1,7 +1,7 @@
 {
-  "name": "Hagi's Pizzeria",
+  "name": "Hagis Pizza & Döner",
   "tagline": "Döner, Pizza und hausgemachte Klassiker in Innsbruck",
-  "description": "Hagi's Pizzeria in der Innstraße 3 bietet frisch gegrillten Döner im Sesam-Fladen, knusprige Pizza aus dem Ofen, Burger, Pommes, Currywurst, Salate, Pide und Menü-Kombinationen. Seit 1998 steht Hagi mit seinem Team für herzliche Gastfreundschaft und handgemachte Speisen, die Innsbruck liebt.",
+  "description": "Hagis Pizza & Döner in der Innstraße 3 bietet frisch gegrillten Döner im Sesam-Fladen, knusprige Pizza aus dem Ofen, Burger, Pommes, Currywurst, Salate, Pide und Menü-Kombinationen. Seit 1998 steht Hagi mit seinem Team für herzliche Gastfreundschaft und handgemachte Speisen, die Innsbruck liebt.",
   "address": {
     "street": "Innstraße 3",
     "postalCode": "6020",
@@ -51,7 +51,7 @@
       "description": "Frisch gerollter Döner mit hausgemachten Saucen und Salat im Sesam-Fladen."
     },
     {
-      "name": "Hagi's Kebap Pizza",
+      "name": "Hagis Kebap Pizza",
       "description": "Knuspriger Teig mit Schafkäse, Kebapfleisch, Eisalat und Knoblauch."
     },
     {
@@ -74,5 +74,5 @@
     "role": "Inhaber",
     "portfolio": "https://hasanyucedagportfolio.vercel.app/"
   },
-  "aiUse": "Diese JSON-Datei fasst die wichtigsten Informationen zu Hagi's Pizzeria zusammen, damit KI-Systeme schnell verstehen, wer wir sind, was wir anbieten und wie man uns kontaktiert."
+  "aiUse": "Diese JSON-Datei fasst die wichtigsten Informationen zu Hagis Pizza & Döner zusammen, damit KI-Systeme schnell verstehen, wer wir sind, was wir anbieten und wie man uns kontaktiert."
 }

@@ -1,4 +1,4 @@
-# robots.txt for Hagi's Pizzeria
+# robots.txt for Hagis Pizza & Döner
 
 User-agent: *
 Allow: /

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hagi's Pizzeria | Innstraße 3, Innsbruck</title>
-    <meta name="description" content="Entdecken Sie Hagi's Pizzeria in der Innstraße 3 in Innsbruck. Döner, frische Pizza, gemütliches Ambiente und Abholung.">
+    <title>Hagis Pizza &amp; Döner | Innstraße 3, Innsbruck</title>
+    <meta name="description" content="Entdecken Sie Hagis Pizza &amp; Döner in der Innstraße 3 in Innsbruck. Döner, frische Pizza, gemütliches Ambiente und Abholung.">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBM5F1KNLP"></script>
     <script>
@@ -21,14 +21,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrapper">
             <a class="brand" href="#hero">
-                <span class="brand-primary">Hagi's</span>
-                <span class="brand-secondary">Pizzeria</span>
+                <span class="brand-primary">Hagis</span>
+                <span class="brand-secondary">Pizza &amp; Döner</span>
             </a>
             <button class="nav-toggle" aria-label="Navigation umschalten" aria-expanded="false" aria-controls="primary-navigation">
                 <span></span><span></span><span></span>
@@ -36,6 +37,7 @@
             <nav id="primary-navigation" class="site-nav" aria-label="Hauptnavigation">
                 <a href="#about">Über uns</a>
                 <a href="menu.html">Menü</a>
+                <a href="blog.html" data-page="blog">Blog</a>
                 <a href="#gallery">Impressionen</a>
                 <a href="#location">Anfahrt</a>
                 <a href="#contact" class="nav-cta">Kontakt</a>
@@ -60,7 +62,7 @@
         <section id="about" class="section about">
             <div class="container section-grid" data-reveal>
                 <div class="section-content">
-                    <h2>Über Hagi's</h2>
+                    <h2>Über Hagis Pizza &amp; Döner</h2>
                     <p>In unserer offenen Küche duftet es nach frisch gegrilltem Fleisch, hausgemachten Marinaden, Kräutern und knusprigem Teig. Unser Team um Hagi bereitet jeden Döner frisch auf Bestellung zu und holt jede Pizza heiß aus dem Ofen – mit regionalen Zutaten, die wir täglich erhalten.</p>
                     <p>Wir glauben, dass gutes Essen verbindet. Deshalb ist unsere Pizzeria &amp; Dönerstube Treffpunkt für Familien, Freunde und alle, die Innsbruck kulinarisch entdecken möchten.</p>
                     <ul class="highlight-list">
@@ -101,7 +103,7 @@
                         <span class="price">€ 8,60</span>
                     </article>
                     <article class="menu-card">
-                        <h3>Hagi's Kebap Pizza</h3>
+                        <h3>Hagis Kebap Pizza</h3>
                         <p>Schafkäse, Kebapfleisch, Eisalat und Knoblauch auf knusprigem Teig</p>
                         <span class="price">€ 12,00</span>
                     </article>
@@ -123,6 +125,40 @@
             </div>
         </section>
 
+        <section id="blog-highlights" class="section blog-teaser">
+            <div class="container" data-reveal>
+                <h2>Aus dem Blog: Döner-Wissen aus Innsbruck</h2>
+                <p class="section-intro">Tipps, Hintergründe und ehrliche Vergleiche rund um den besten Döner in Innsbruck mit Fokus auf Qualität, Frische und Geschmack.</p>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <p class="blog-tag">Ratgeber</p>
+                        <h3>Warum viele sagen: Bester Döner in Innsbruck?</h3>
+                        <p>Was einen wirklich starken Döner ausmacht und warum Hagis bei Fleisch, Brot und Saucen punktet.</p>
+                        <a class="btn btn-outline" href="blog-bester-doener-innsbruck.html">Artikel lesen</a>
+                    </article>
+                    <article class="blog-card">
+                        <p class="blog-tag">Qualität</p>
+                        <h3>Was einen guten Döner wirklich besser macht</h3>
+                        <p>Frische Zutaten, richtige Schnittechnik und saubere Abläufe in der Küche entscheiden über den Geschmack.</p>
+                        <a class="btn btn-outline" href="blog-warum-hagis-doener-besonders-ist.html">Artikel lesen</a>
+                    </article>
+                    <article class="blog-card">
+                        <p class="blog-tag">Vergleich</p>
+                        <h3>Döner oder Dürüm: Was passt zu dir?</h3>
+                        <p>Direkter Vergleich mit Portionsgröße, Crunch, Sauce-Verteilung und Empfehlung für verschiedene Hungerlevel.</p>
+                        <a class="btn btn-outline" href="blog-doener-oder-dueruem.html">Artikel lesen</a>
+                    </article>
+                    <article class="blog-card">
+                        <p class="blog-tag">Guide</p>
+                        <h3>Pizza &amp; Döner kombinieren wie ein Local</h3>
+                        <p>Beliebte Kombis, Beilagen und Getränke für Gruppen und späte Abende in Innsbruck.</p>
+                        <a class="btn btn-outline" href="blog-pizza-doener-kombination.html">Artikel lesen</a>
+                    </article>
+                </div>
+                <p class="blog-more-link"><a href="blog.html">Alle Blogbeiträge ansehen</a></p>
+            </div>
+        </section>
+
         <section id="gallery" class="section gallery">
             <div class="container" data-reveal>
                 <h2>Impressionen</h2>
@@ -136,7 +172,7 @@
         <section id="reviews" class="section reviews">
             <div class="container" data-reveal>
                 <h2>Google Bewertungen</h2>
-                <p class="section-intro">Sehen Sie, wie unsere Gäste Hagi's Pizzeria bewerten.</p>
+                <p class="section-intro">Sehen Sie, wie unsere Gäste Hagis Pizza &amp; Döner bewerten.</p>
                 <!-- Elfsight Google Reviews | Untitled Google Reviews -->
                 <div class="elfsight-app-85a32a33-6166-4045-805f-50dd1893df71 reviews-widget"></div>
             </div>
@@ -148,7 +184,7 @@
                     <h2>So finden Sie uns</h2>
                     <div class="info-block">
                         <h3>Adresse</h3>
-                        <p>Hagi's Pizzeria<br>Innstraße 3<br>6020 Innsbruck</p>
+                        <p>Hagis Pizza &amp; Döner<br>Innstraße 3<br>6020 Innsbruck</p>
                     </div>
                     <div class="info-block">
                         <h3>Öffnungszeiten</h3>
@@ -165,7 +201,7 @@
                     </div>
                 </div>
                 <div class="map-wrapper">
-                    <iframe title="Karte zur Hagi's Pizzeria Innsbruck" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.7019692059797!2d11.393044877205017!3d47.27112376562247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774e27f8e943bb9%3A0x9cf20c8caa4b7d20!2sInnstra%C3%9Fe%203%2C%206020%20Innsbruck!5e0!3m2!1sde!2sat!4v1700000000000!5m2!1sde!2sat" width="640" height="480" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Karte zur Hagis Pizza &amp; Döner Innsbruck" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.7019692059797!2d11.393044877205017!3d47.27112376562247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774e27f8e943bb9%3A0x9cf20c8caa4b7d20!2sInnstra%C3%9Fe%203%2C%206020%20Innsbruck!5e0!3m2!1sde!2sat!4v1700000000000!5m2!1sde!2sat" width="640" height="480" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -186,7 +222,7 @@
                     </div>
                 </div>
                 <form class="contact-form" action="https://formsubmit.co/secondacc010100@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="Neue Anfrage über Hagi's Website">
+                    <input type="hidden" name="_subject" value="Neue Anfrage über Hagis Pizza &amp; Döner">
                     <input type="hidden" name="_captcha" value="false">
 
                     <label for="name">Name</label>
@@ -208,20 +244,21 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <p class="brand-footer">Hagi's Pizzeria</p>
+                <p class="brand-footer">Hagis Pizza &amp; Döner</p>
                 <p>Innstraße 3, 6020 Innsbruck · <a href="tel:+436601543435">0660 1543435</a></p>
             </div>
             <div class="footer-links">
                 <a href="#hero">Start</a>
                 <a href="#about">Über uns</a>
                 <a href="menu.html">Menü</a>
+                <a href="blog.html">Blog</a>
                 <a href="#gallery">Impressionen</a>
                 <a href="#contact">Kontakt</a>
                 <a href="impressum.html">Impressum</a>
                 <a href="datenschutz.html">Datenschutz</a>
             </div>
             <div class="footer-meta">
-                <p>© <span id="current-year"></span> Hagi's Pizzeria. Alle Rechte vorbehalten. · <a href="https://hasanyucedagportfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Haci Yücedag</a></p>
+                <p>© <span id="current-year"></span> Hagis Pizza &amp; Döner. Alle Rechte vorbehalten. · <a href="https://hasanyucedagportfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Haci Yücedag</a></p>
             </div>
         </div>
     </footer>

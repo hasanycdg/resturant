@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hagi's Pizzeria | Innstraße 3, Innsbruck</title>
     <meta name="description" content="Entdecken Sie Hagi's Pizzeria in der Innstraße 3 in Innsbruck. Döner, frische Pizza, gemütliches Ambiente und Abholung.">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBM5F1KNLP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-CBM5F1KNLP');
+    </script>
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,10 +30,10 @@
                 <span class="brand-primary">Hagi's</span>
                 <span class="brand-secondary">Pizzeria</span>
             </a>
-            <button class="nav-toggle" aria-label="Navigation umschalten">
+            <button class="nav-toggle" aria-label="Navigation umschalten" aria-expanded="false" aria-controls="primary-navigation">
                 <span></span><span></span><span></span>
             </button>
-            <nav class="site-nav" aria-label="Hauptnavigation">
+            <nav id="primary-navigation" class="site-nav" aria-label="Hauptnavigation">
                 <a href="#about">Über uns</a>
                 <a href="menu.html">Menü</a>
                 <a href="#gallery">Impressionen</a>
@@ -53,16 +65,16 @@
                     <p>Wir glauben, dass gutes Essen verbindet. Deshalb ist unsere Pizzeria &amp; Dönerstube Treffpunkt für Familien, Freunde und alle, die Innsbruck kulinarisch entdecken möchten.</p>
                     <ul class="highlight-list">
                         <li>Signature Döner im Hausgemachten-Fladenbrot</li>
-                        <li>Knusprige Pizza &amp spezielle Saucen</li>
+                        <li>Knusprige Pizza &amp; spezielle Saucen</li>
                         <li>Vegetarische &amp; vegane Optionen</li>
                     </ul>
                 </div>
                 <div class="section-media">
                     <div class="media-card">
-                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=80" alt="Frisch gebackene Pizza mit Basilikum">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=80" alt="Frisch gebackene Pizza mit Basilikum" width="900" height="600" loading="lazy" decoding="async">
                     </div>
                     <div class="media-card media-card--offset">
-                        <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=900&q=80" alt="Frische Zutaten für Pizza">
+                        <img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=900&q=80" alt="Frische Zutaten für Pizza" width="900" height="600" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -116,8 +128,17 @@
                 <h2>Impressionen</h2>
                 <p class="section-intro">Folgen Sie uns auf Social Media, um die neuesten Kreationen aus Dönergrill und Pizzaofen live zu erleben.</p>
                 <div id="curator-feed-default-feed-layout">
-                    <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+                    <a href="https://curator.io" target="_blank" rel="noopener noreferrer" class="crt-logo crt-tag">Powered by Curator.io</a>
                 </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="section reviews">
+            <div class="container" data-reveal>
+                <h2>Google Bewertungen</h2>
+                <p class="section-intro">Sehen Sie, wie unsere Gäste Hagi's Pizzeria bewerten.</p>
+                <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+                <div class="reviews-widget elfsight-app-85a32a33-6166-4045-805f-50dd1893df71" data-elfsight-app-lazy></div>
             </div>
         </section>
 
@@ -144,7 +165,7 @@
                     </div>
                 </div>
                 <div class="map-wrapper">
-                    <iframe title="Karte zur Hagi's Pizzeria Innsbruck" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.7019692059797!2d11.393044877205017!3d47.27112376562247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774e27f8e943bb9%3A0x9cf20c8caa4b7d20!2sInnstra%C3%9Fe%203%2C%206020%20Innsbruck!5e0!3m2!1sde!2sat!4v1700000000000!5m2!1sde!2sat" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe title="Karte zur Hagi's Pizzeria Innsbruck" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.7019692059797!2d11.393044877205017!3d47.27112376562247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774e27f8e943bb9%3A0x9cf20c8caa4b7d20!2sInnstra%C3%9Fe%203%2C%206020%20Innsbruck!5e0!3m2!1sde!2sat!4v1700000000000!5m2!1sde!2sat" width="640" height="480" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -178,7 +199,7 @@
                     <textarea id="message" name="message" rows="4" placeholder="Wie können wir helfen?" required></textarea>
 
                     <button type="submit" class="btn btn-primary">Nachricht senden</button>
-                    <p class="form-meta">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten entsprechend unserer Datenschutzerklärung zu.</p>
+                    <p class="form-meta">Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Daten entsprechend unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.</p>
                 </form>
             </div>
         </section>
@@ -196,6 +217,8 @@
                 <a href="menu.html">Menü</a>
                 <a href="#gallery">Impressionen</a>
                 <a href="#contact">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
             </div>
             <div class="footer-meta">
                 <p>© <span id="current-year"></span> Hagi's Pizzeria. Alle Rechte vorbehalten. · <a href="https://hasanyucedagportfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Hasan Yücedag</a></p>
@@ -210,5 +233,6 @@
     e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
     })();
     </script>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
 </body>
 </html>

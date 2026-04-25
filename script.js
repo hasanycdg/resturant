@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
+    document.documentElement.classList.add("js");
+
     const navToggle = document.querySelector(".nav-toggle");
     const nav = document.querySelector(".site-nav");
     const navLinks = document.querySelectorAll(".site-nav a");
@@ -7,16 +9,45 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
 
     if (navToggle && nav) {
+        if (!nav.id) {
+            nav.id = "primary-navigation";
+        }
+        navToggle.setAttribute("aria-controls", nav.id);
+        navToggle.setAttribute("aria-expanded", "false");
+
+        const closeNav = () => {
+            nav.classList.remove("is-open");
+            navToggle.classList.remove("is-active");
+            navToggle.setAttribute("aria-expanded", "false");
+        };
+
         navToggle.addEventListener("click", () => {
-            nav.classList.toggle("is-open");
+            const isOpen = nav.classList.toggle("is-open");
             navToggle.classList.toggle("is-active");
+            navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
         });
 
         navLinks.forEach((link) => {
             link.addEventListener("click", () => {
-                nav.classList.remove("is-open");
-                navToggle.classList.remove("is-active");
+                closeNav();
             });
+        });
+
+        document.addEventListener("click", (event) => {
+            const target = event.target;
+            if (!(target instanceof Element)) {
+                return;
+            }
+            if (!nav.contains(target) && !navToggle.contains(target)) {
+                closeNav();
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && nav.classList.contains("is-open")) {
+                closeNav();
+                navToggle.focus();
+            }
         });
     }
 

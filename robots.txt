@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.hagis-pizzeria.at/sitemap.xml
+Sitemap: https://hagispizzeria.netlify.app/sitemap.xml

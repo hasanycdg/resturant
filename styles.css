@@ -308,6 +308,12 @@ a:focus-visible {
     text-align: center;
 }
 
+.menu-intro-links {
+    margin: 1rem 0 0;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
 .menu-page .site-nav a[data-page="menu"] {
     color: var(--color-primary);
 }

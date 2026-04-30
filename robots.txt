@@ -1,5 +1,3 @@
-# robots.txt for Hagis Pizza & Döner
-
 User-agent: *
 Allow: /
 

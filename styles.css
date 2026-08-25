@@ -176,7 +176,7 @@ a:focus-visible {
     display: flex;
     align-items: center;
     color: var(--color-light);
-    background: linear-gradient(120deg, rgba(0, 0, 0, 0.5), rgba(221, 57, 52, 0.55)), url("https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.5), rgba(221, 57, 52, 0.55)), url("images/hero-bg.jpg") center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -222,7 +222,7 @@ a:focus-visible {
 
 .hero--menu {
     min-height: 70vh;
-    background: linear-gradient(120deg, rgba(0, 0, 0, 0.55), rgba(221, 57, 52, 0.5)), url("https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.55), rgba(221, 57, 52, 0.5)), url("images/menu-hero-bg.jpg") center/cover no-repeat;
 }
 
 .btn {
@@ -1143,3 +1143,84 @@ a:focus-visible {
         transform: none;
     }
 }
+
+/* ===== DSGVO Consent-Banner ===== */
+#consent-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: var(--color-dark);
+    color: var(--color-light);
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.25);
+    animation: consent-in 0.3s ease-out;
+}
+@keyframes consent-in {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+.consent-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+.consent-text {
+    flex: 1 1 320px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+.consent-text a { color: var(--color-secondary); }
+.consent-actions {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+.consent-btn {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.65rem 1.25rem;
+    border-radius: 999px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.consent-btn:hover { transform: translateY(-1px); }
+.consent-btn--primary {
+    background: var(--color-primary);
+    color: var(--color-light);
+}
+.consent-btn--primary:hover { background: #c22f2b; }
+.consent-btn--ghost {
+    background: transparent;
+    color: var(--color-light);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.consent-btn--ghost:hover { background: rgba(255, 255, 255, 0.12); }
+@media (max-width: 640px) {
+    .consent-inner { flex-direction: column; align-items: stretch; }
+    .consent-actions { justify-content: stretch; }
+    .consent-btn { flex: 1; }
+}
+
+/* ===== Google-Maps Consent-Platzhalter ===== */
+.map-wrapper { position: relative; }
+.map-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    text-align: center;
+    padding: 2rem;
+    min-height: 320px;
+    background: var(--color-neutral);
+    border-radius: 14px;
+    color: var(--color-muted);
+}
+.map-placeholder p { margin: 0; max-width: 34ch; }
